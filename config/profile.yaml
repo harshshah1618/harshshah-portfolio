@@ -45,16 +45,16 @@ profile:
 
 
   # you can use HTML syntax here (e.g. <br/>, <a>, <strong>, ...)
-biography: |
-  Hi, I’m <strong>Harsh</strong> — a <em>Computer Science graduate student at USC</em> interested in building
-  <strong>scalable systems</strong> and exploring the intersection of <strong>AI and emerging technologies</strong>.
+  biography: |
+    Hi, I’m <strong>Harsh</strong> — a <em>Computer Science graduate student at USC</em> interested in building
+    <strong>scalable systems</strong> and exploring the intersection of <strong>AI and emerging technologies</strong>.
 
-  <div class="my-2"></div>
+    <div class="my-2"></div>
 
-  I bring experience as a <em>Full-Stack Engineer</em> and enjoy solving complex, real-world problems through clean system design and code.
-  I’m currently seeking <b>Summer 2026 internship opportunities</b> and always happy to connect with like-minded engineers and researchers.
+    I bring experience as a <em>Full-Stack Engineer</em> and enjoy solving complex, real-world problems through clean system design and code.
+    I’m currently seeking <b>Summer 2026 internship opportunities</b> and always happy to connect with like-minded engineers and researchers.
 
-  Feel free to <a href="mailto:hrshah@usc.edu" target="_blank" rel="noopener noreferrer">reach out</a>.
+    Feel free to <a href="mailto:hrshah@usc.edu" target="_blank" rel="noopener noreferrer">reach out</a>.
 
 
 # # =====================================================
