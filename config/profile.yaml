@@ -45,12 +45,17 @@ profile:
 
 
   # you can use HTML syntax here (e.g. <br/>, <a>, <strong>, ...)
-  biography: |
-   biography: |
-    Hi! I'm <strong>Harsh</strong>, a <em>Computer Science Graduate Student</em> passionate about <em>scalable systems, quantum computing, and the broader world of AI</em>. Currently, I am pursuing my Master's degree at the <em>University of Southern California</em>, where I am expanding my technical expertise. 
-    With a background as a <em>Full-Stack Engineer</em>, I am eager to apply my skills to solving complex problems.
-    <div class="my-2"></div>
-    I would love to meet with like-minded people in the field. I’m also looking for <b>Summer 2026 internship opportunities</b>. Thanks for visiting! Feel free to <a href="mailto:[your-email@example.com]" target="_blank" rel="noopener noreferrer">reach out</a> to connect or if you know of any relevant openings.
+biography: |
+  Hi, I’m <strong>Harsh</strong> — a <em>Computer Science graduate student at USC</em> interested in building
+  <strong>scalable systems</strong> and exploring the intersection of <strong>AI and emerging technologies</strong>.
+
+  <div class="my-2"></div>
+
+  I bring experience as a <em>Full-Stack Engineer</em> and enjoy solving complex, real-world problems through clean system design and code.
+  I’m currently seeking <b>Summer 2026 internship opportunities</b> and always happy to connect with like-minded engineers and researchers.
+
+  Feel free to <a href="mailto:hrshah@usc.edu" target="_blank" rel="noopener noreferrer">reach out</a>.
+
 
 # # =====================================================
 # # 🎓 Education Section
@@ -153,13 +158,18 @@ services:
 
 skills:
   Programming:
-    - name: "[Name]"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg"
-      proficiency: "[Proficiency]"
-      description: "[Description]"
-
     - name: "Python"
       logo: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+      proficiency: Experienced
+      description: null
+
+    - name: "C"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
+      proficiency: Experienced
+      description: null
+
+    - name: "C++"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg"
       proficiency: Experienced
       description: null
 
@@ -168,61 +178,115 @@ skills:
       proficiency: Fluent
       description: null
 
-  Web:
+    - name: "TypeScript"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/f/f5/Typescript.svg"
+      proficiency: Fluent
+      description: null
+
+    - name: "Java"
+      logo: "https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg"
+      proficiency: Experienced
+      description: null
+
+    - name: "SQL"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+      proficiency: Experienced
+      description: null
+
+  Frameworks & Tools:
+    - name: "FastAPI"
+      logo: "https://cdn.worldvectorlogo.com/logos/fastapi.svg"
+      proficiency: Fluent
+      description: null
+
+    - name: "Angular"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg"
+      proficiency: Experienced
+      description: null
+
     - name: "React"
       logo: "https://upload.wikimedia.org/wikipedia/commons/3/30/React_Logo_SVG.svg"
       proficiency: Advanced
       description: null
 
-    - name: "Typescript"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/f/f5/Typescript.svg"
-      proficiency: Fluent
+    - name: "SQLAlchemy"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/d/d7/Sqlalchemy.svg"
+      proficiency: Experienced
       description: null
 
-    - name: "TailwindCSS"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
-      proficiency: Fluent
-      description: null
+    - name: "ROS (Robot OS)"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/b/bb/Ros_logo.svg"
+      proficiency: Experienced
+      description: "Robotics middleware & simulation."
 
-    - name: "Next.js"
-      logo: "https://logo.svgcdn.com/devicon/nextjs-original.png"
-      proficiency: Fluent
-      description: null
-
-  Machine Learning:
     - name: "PyTorch"
       logo: "https://upload.wikimedia.org/wikipedia/commons/1/10/PyTorch_logo_icon.svg"
       proficiency: Experienced
       description: null
 
-    - name: "TensorFlow"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg"
+    - name: "LangChain"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/5/52/LangChain_logo.png"
+      proficiency: Experienced
+      description: null
+
+    - name: "spaCy"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/8/88/SpaCy_logo.svg"
+      proficiency: Experienced
+      description: null
+
+    - name: "Qiskit"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/f/f8/Qiskit-Logo.svg"
+      proficiency: Intermediate
+      description: "Quantum computing framework."
+
+    - name: "Jira / Agile"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/8/8a/Jira_Logo.svg"
+      proficiency: Experienced
+      description: "Scrum & Agile methodologies."
+
+  Cloud & Databases:
+    - name: "AWS"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg"
+      proficiency: Experienced
+      description: null
+
+    - name: "Azure"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/f/f5/Azure.svg"
+      proficiency: Experienced
+      description: null
+
+    - name: "PostgreSQL"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg"
+      proficiency: Advanced
+      description: null
+
+    - name: "MongoDB"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg"
+      proficiency: Experienced
+      description: null
+
+    - name: "Redis"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/6/64/Logo-redis.svg"
+      proficiency: Experienced
+      description: null
+
+  DevOps:
+    - name: "Git"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg"
       proficiency: Fluent
       description: null
 
-    - name: "Keras"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Keras_logo.svg"
-      proficiency: Fluent
+    - name: "Docker"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_%28container_engine%29_logo.svg"
+      proficiency: Experienced
       description: null
 
-  Research:
-    - name: "Machine Learning"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/2/2a/OOjs_UI_icon_academic-progressive.svg"
-      proficiency: 2020 - Current
-      description: "General machine learning methods and applied research."
+    - name: "Kubernetes"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg"
+      proficiency: Experienced
+      description: null
 
-    - name: "Representation Learning"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/2/2a/OOjs_UI_icon_academic-progressive.svg"
-      proficiency: 2024 - 2025
-      description: "Learning meaningful embeddings and feature representations from data."
-
-  Language:
-    - name: "English"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/e/e0/OOjs_UI_icon_language-ltr-progressive.svg"
-      proficiency: Fluent
-      description: "Professional working proficiency."
-
-    - name: "Taiwanese Hokkien"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/e/e0/OOjs_UI_icon_language-ltr-progressive.svg"
-      proficiency: Native
-      description: "Native fluency."
+    - name: "Jenkins"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/e/e9/Jenkins_logo.svg"
+      proficiency: Experienced
+      description: null
