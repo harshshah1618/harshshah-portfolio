@@ -12,15 +12,15 @@
 # =====================================================
 
 profile:
-  name: "[Your Name]"
-  headline: "Student @ [Your University]"
-  email: "your-email@gmail.com"
-  location: null
+  name: "Harsh Rajesh Shah"
+  headline: "Student @ University of Southern California"
+  email: "hrshah@usc.edu"
+  location: "Los Angeles , California"
   profileImage: "https://github.com/pm25.png"
 
   links:
     - name: "LinkedIn"
-      url: "https://www.linkedin.com/in/[your-linkedin]"
+      url: "https://www.linkedin.com/in/harsh-shah16"
       icon:
         name: "FaLinkedin"
         package: "react-icons/fa6"
@@ -32,49 +32,41 @@ profile:
         package: "react-icons/fa6"
 
     - name: "Résumé"
-      url: "/pdf/sample-resume.pdf"
+      url: "/pdf/resume.pdf"
       icon:
         name: "FaRegIdBadge"
         package: "react-icons/fa6"
 
     - name: "Github"
-      url: "https://github.com/[your-github]"
+      url: "https://github.com/harshshah1618"
       icon:
         name: "FaGithub"
         package: "react-icons/fa6"
 
-    - name: "Facebook"
-      url: "https://www.facebook.com/[your-facebook]"
-      icon:
-        name: "FaSquareFacebook"
-        package: "react-icons/fa6"
 
   # you can use HTML syntax here (e.g. <br/>, <a>, <strong>, ...)
   biography: |
-    Hi! I'm <strong>[Your Name]</strong>, a <em>[Your Title]</em> passionate about <em>[field or topic]</em>. Currently, I work as <em>[current role]</em> at <em>[organization]</em>, where I <em>[briefly describe your work or mission]</em>. 
-    With a background in <em>[academic or professional background]</em>, I've developed strong interests in <em>[key interests or specialties]</em> and have contributed to projects like <i>[example project]</i> and <i>[another example]</i>, all focused on <em>[broader goal or impact]</em>.
+   biography: |
+    Hi! I'm <strong>[Your Name]</strong>, a <em>Computer Science Graduate Student</em> passionate about <em>scalable systems, quantum computing, and the broader world of AI</em>. Currently, I am pursuing my Master's degree at the <em>University of Southern California</em>, where I am expanding my technical expertise. 
+    With a background as a <em>Full-Stack Engineer (2 years experience)</em>, I am eager to apply my skills to solving complex problems.
     <div class="my-2"></div>
-    Outside of work, I enjoy <em>[hobbies or personal interests]</em>, which inspire creativity and keep me energized. Thanks for visiting! Feel free to <a href="mailto:[your-email@example.com]" target="_blank" rel="noopener noreferrer">reach out</a> to connect.
+    I would love to meet with like-minded people in the field. I’m also looking for <b>Summer 2026 internship opportunities</b>. Thanks for visiting! Feel free to <a href="mailto:[your-email@example.com]" target="_blank" rel="noopener noreferrer">reach out</a> to connect or if you know of any relevant openings.
 
 # # =====================================================
 # # 🎓 Education Section
 # # =====================================================
 
 education:
-  - degree: "Ph.D. in [Field]"
-    school: "[University Name]"
-    years: "20XX - Present"
-    logo: "https://upload.wikimedia.org/wikipedia/en/a/a1/Arizona_State_University_seal.svg"
 
   - degree: "M.S. in Computer Science"
-    school: "National Taiwan University"
-    years: "2020 - 2022"
-    logo: "/images/ntu_logo.svg"
+    school: "University of Southern California"
+    years: "2025 - present"
+    logo: "/images/usc.svg"
 
-  - degree: "B.S. in Computer Science"
-    school: "National Chengchi University"
-    years: "2018 - 2020"
-    logo: "/images/nccu_logo.svg"
+  - degree: "B.E. in Computer Science"
+    school: "JSS Science and Technology University"
+    years: "2019 - 2023"
+    logo: "/images/jss.jpg"
 
 # # =====================================================
 # # 💼 Work Experience Section

@@ -16,11 +16,13 @@ homepage:
       variant: default
       enabled: true
 
-    - name: Publications
-      variant: default
-      enabled: true
+    
 
     - name: Projects
+      variant: default
+      enabled: true
+    
+    - name: Publications
       variant: default
       enabled: true
 
