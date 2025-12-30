@@ -25,11 +25,11 @@ profile:
         name: "FaLinkedin"
         package: "react-icons/fa6"
 
-    - name: "Google Scholar"
-      url: "https://scholar.google.com/citations?user=[your-id]"
-      icon:
-        name: "FaGoogleScholar"
-        package: "react-icons/fa6"
+    # - name: "Google Scholar"
+    #   url: "https://scholar.google.com/citations?user=[your-id]"
+    #   icon:
+    #     name: "FaGoogleScholar"
+    #     package: "react-icons/fa6"
 
     - name: "Résumé"
       url: "/pdf/resume.pdf"
@@ -47,8 +47,8 @@ profile:
   # you can use HTML syntax here (e.g. <br/>, <a>, <strong>, ...)
   biography: |
    biography: |
-    Hi! I'm <strong>[Your Name]</strong>, a <em>Computer Science Graduate Student</em> passionate about <em>scalable systems, quantum computing, and the broader world of AI</em>. Currently, I am pursuing my Master's degree at the <em>University of Southern California</em>, where I am expanding my technical expertise. 
-    With a background as a <em>Full-Stack Engineer (2 years experience)</em>, I am eager to apply my skills to solving complex problems.
+    Hi! I'm <strong>Harsh</strong>, a <em>Computer Science Graduate Student</em> passionate about <em>scalable systems, quantum computing, and the broader world of AI</em>. Currently, I am pursuing my Master's degree at the <em>University of Southern California</em>, where I am expanding my technical expertise. 
+    With a background as a <em>Full-Stack Engineer</em>, I am eager to apply my skills to solving complex problems.
     <div class="my-2"></div>
     I would love to meet with like-minded people in the field. I’m also looking for <b>Summer 2026 internship opportunities</b>. Thanks for visiting! Feel free to <a href="mailto:[your-email@example.com]" target="_blank" rel="noopener noreferrer">reach out</a> to connect or if you know of any relevant openings.
 
@@ -61,7 +61,7 @@ education:
   - degree: "M.S. in Computer Science"
     school: "University of Southern California"
     years: "2025 - present"
-    logo: "/images/usc.svg"
+    logo: "/images/usc.png"
 
   - degree: "B.E. in Computer Science"
     school: "JSS Science and Technology University"
@@ -73,20 +73,20 @@ education:
 # # =====================================================
 
 workExperience:
-  - title: "[Job Title]"
-    company: "[Company Name]"
-    years: "20XX - Present"
-    logo: "/images/nvidia_logo.webp"
+  - title: "Software Engineer"
+    company: "Fidelity Investments"
+    years: "Aug 2023 - Aug 2025"
+    logo: "/images/fidelity.jpg"
 
   - title: "Software Engineering Intern"
-    company: "Google"
-    years: "Jul 2022 - Sep 2022"
-    logo: "/images/google_logo.svg"
+    company: "Fidelity Investments"
+    years: "Feb 2023 - June 2023"
+    logo: "/images/fidelity.jpg"
 
-  - title: "Research Assistant"
-    company: "University of Illinois Urbana-Champaign"
-    years: "Jul 2019 - Sep 2019"
-    logo: "/images/uiuc_logo.png"
+  - title: "Research Intern"
+    company: "GE Healthcare"
+    years: "Aug 2022- Nov 2022"
+    logo: "/images/ge.jpg"
 
 # # =====================================================
 # # 🎤 Presentations / Talks Section
