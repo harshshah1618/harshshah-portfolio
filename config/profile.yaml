@@ -46,15 +46,15 @@ profile:
 
   # you can use HTML syntax here (e.g. <br/>, <a>, <strong>, ...)
   biography: |
-    Hi, I’m <strong>Harsh</strong> — a <em>Computer Science graduate student at USC</em> interested in building
-    <strong>scalable systems</strong> and exploring the intersection of <strong>AI and emerging technologies</strong>.
+    Hi, I'm <strong>Harsh</strong>! I'm a <em>Computer Science grad student at USC</em> with a thing for <strong>distributed systems</strong> and <strong>backend engineering</strong>. I love the challenge of building software that scales gracefully and the satisfaction when everything just clicks.
 
     <div class="my-2"></div>
 
-    I bring experience as a <em>Full-Stack Engineer</em> and enjoy solving complex, real-world problems through clean system design and code.
-    I’m currently seeking <b>Summer 2026 internship opportunities</b> and always happy to connect with like-minded engineers and researchers.
+    Previously worked as a <em>Full-Stack Engineer</em>, and now I'm exploring new problems in <strong>systems design</strong> and <strong>infrastructure</strong>. Seeking <b>Summer 2026 internships</b> where I can contribute, learn, and work alongside talented teams.
 
-    Feel free to <a href="mailto:hrshah@usc.edu" target="_blank" rel="noopener noreferrer">reach out</a>.
+    <div class="my-2"></div>
+
+    Always happy to chat — whether it's about tech, career paths, or your favorite movie. <a href="mailto:hrshah@usc.edu" target="_blank" rel="noopener noreferrer">Reach out anytime!</a>
 
 
 # # =====================================================
@@ -66,7 +66,7 @@ education:
   - degree: "M.S. in Computer Science"
     school: "University of Southern California"
     years: "2025 - present"
-    logo: "/images/usc.png"
+    logo: "/images/usc2.png"
 
   - degree: "B.E. in Computer Science"
     school: "JSS Science and Technology University"
@@ -200,7 +200,7 @@ skills:
       description: null
 
     - name: "Angular"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/6/67/Angular_gradient_logo.png"
       proficiency: Experienced
       description: null
 
@@ -210,7 +210,7 @@ skills:
       description: null
 
     - name: "SQLAlchemy"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/d/d7/Sqlalchemy.svg"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/d/d7/SQLAlchemy.svg"
       proficiency: Experienced
       description: null
 
@@ -225,7 +225,7 @@ skills:
       description: null
 
     - name: "LangChain"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/5/52/LangChain_logo.png"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/3/3f/LangChain_logo.png"
       proficiency: Experienced
       description: null
 
@@ -235,7 +235,7 @@ skills:
       description: null
 
     - name: "Qiskit"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/f/f8/Qiskit-Logo.svg"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/5/51/Qiskit-Logo.svg"
       proficiency: Intermediate
       description: "Quantum computing framework."
 
@@ -251,7 +251,7 @@ skills:
       description: null
 
     - name: "Azure"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/f/f5/Azure.svg"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/f/fa/Microsoft_Azure.svg"
       proficiency: Experienced
       description: null
 

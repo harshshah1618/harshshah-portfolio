@@ -1,14 +1,21 @@
 export interface RepoProps {
-  name: string;
-  html_url: string;
-  description: string | null;
-  topics: string[] | null;
-  language: string | null;
-  stargazers_count: number | null;
-  homepage: string | null;
-  created_at: string;
-  pushed_at: string;
-  displayName: string | null;
-  previewImage: string | null;
-  featured: boolean;
+  source?: "github" | "manual";
+
+  displayName?: string;
+  description?: string;
+  topics?: string[];
+  language?: string | null;
+  previewImage?: string;
+  homepage?: string;
+  featured?: boolean;
+
+  // badge
+  category?: "research" | "coursework" | "systems" | "product" | "work";
+
+  // GitHub
+  name?: string;
+  html_url?: string;
+  stargazers_count?: number;
+  created_at?: string;
+  pushed_at?: string;
 }

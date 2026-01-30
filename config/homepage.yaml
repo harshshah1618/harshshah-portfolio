@@ -12,6 +12,10 @@ homepage:
       variant: default
       enabled: true
 
+    - name: Updates
+      variant: default
+      enabled: true
+
     - name: Experience
       variant: default
       enabled: true
@@ -24,7 +28,7 @@ homepage:
     
     - name: Publications
       variant: default
-      enabled: true
+      enabled: false
 
     - name: Skills
       variant: default

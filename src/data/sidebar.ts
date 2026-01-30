@@ -1,38 +1,32 @@
-import { LuUser, LuWrench, LuLibraryBig, LuNewspaper, LuClapperboard, LuMusic } from "react-icons/lu";
+import { LuMegaphone, LuUser, LuCpu, LuWrench, LuNewspaper } from "react-icons/lu";
 
 export const sidebar = {
-  userName: `[Your Name]`,
-  profileImage: `https://github.com/shadcn.png`,
+  userName: `Harsh Shah`,
   sections: [
+    {
+      title: `Updates`,
+      url: `updates`,
+      icon: LuMegaphone
+    },
     {
       title: `About Me`,
       url: ``,
-      icon: LuUser,
+      icon: LuUser
+    },
+    {
+      title: `Skills`,
+      url: `skills`,
+      icon: LuCpu
     },
     {
       title: `Projects`,
       url: `projects`,
-      icon: LuWrench,
-    },
-    {
-      title: `Publications`,
-      url: `publications`,
-      icon: LuLibraryBig,
+      icon: LuWrench
     },
     {
       title: `Articles`,
       url: `articles`,
-      icon: LuNewspaper,
-    },
-    {
-      title: `Movies`,
-      url: `movies`,
-      icon: LuClapperboard,
-    },
-    {
-      title: `Music`,
-      url: `music`,
-      icon: LuMusic,
-    },
-  ],
+      icon: LuNewspaper
+    }
+  ]
 };

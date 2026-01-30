@@ -3,37 +3,32 @@ export const homepage = {
     {
       name: `Introduction`,
       variant: `default`,
-      enabled: true,
+      enabled: true
+    },
+    {
+      name: `Updates`,
+      variant: `default`,
+      enabled: true
     },
     {
       name: `Experience`,
       variant: `default`,
-      enabled: true,
-    },
-    {
-      name: `Publications`,
-      variant: `default`,
-      enabled: true,
+      enabled: true
     },
     {
       name: `Projects`,
       variant: `default`,
-      enabled: true,
+      enabled: true
+    },
+    {
+      name: `Publications`,
+      variant: `default`,
+      enabled: false
     },
     {
       name: `Skills`,
       variant: `default`,
-      enabled: true,
-    },
-    {
-      name: `Talks`,
-      variant: `default`,
-      enabled: true,
-    },
-    {
-      name: `Services`,
-      variant: `default`,
-      enabled: true,
-    },
-  ],
+      enabled: true
+    }
+  ]
 };
