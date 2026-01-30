@@ -8,3 +8,4 @@ site:
   repoUrl: "https://github.com/pm25/showlit"
   description: "Personal and professional portfolio of me!"
   author: "Harsh Shah"
+  base: "/harshshah-portfolio/"
