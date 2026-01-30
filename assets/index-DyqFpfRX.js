@@ -1,1 +1,0 @@
-import{j as e}from"./index-CjnP-_Ic.js";import{u as t}from"./use-pagetitle-BPaaedYk.js";function l(){return t("Articles"),e.jsx("div",{className:"flex flex-1 flex-col items-center justify-center min-h-[50vh]",children:e.jsx("h2",{className:"text-2xl font-semibold opacity-50",children:"Coming Soon..."})})}export{l as default};
