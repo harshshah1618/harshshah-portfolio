@@ -13,6 +13,8 @@ const ProjectsPage = loadLazy(() => import("@/pages/projects"));
 const PublicationsPage = loadLazy(() => import("@/pages/publications"));
 const ArticlesPage = loadLazy(() => import("@/pages/articles"));
 const ArticlePage = loadLazy(() => import("@/pages/articles/page"));
+const SkillsPage = loadLazy(() => import("@/pages/skills"));
+const UpdatesPage = loadLazy(() => import("@/pages/updates"));
 const NotFoundPage = loadLazy(() => import("@/pages/notfound"));
 
 export default function App() {
@@ -31,6 +33,8 @@ export default function App() {
             <Route path="publications" element={<PublicationsPage />} />
             <Route path="articles" element={<ArticlesPage />} />
             <Route path="/articles/:slug" element={<ArticlePage />} />
+            <Route path="skills" element={<SkillsPage />} />
+            <Route path="updates" element={<UpdatesPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Route>
         </Routes>

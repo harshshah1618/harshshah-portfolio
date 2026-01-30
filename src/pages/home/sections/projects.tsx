@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router";
 import {
   FaWrench,
@@ -6,6 +7,7 @@ import {
   FaRegStar,
   FaArrowRight,
 } from "react-icons/fa6";
+
 
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -47,9 +49,12 @@ export default function ProjectsSection() {
 
 function ProjectCard({
   repoData,
+
 }: {
   repoData: (typeof featuredReposArray)[number];
 }) {
+  const [isExpanded, setIsExpanded] = useState(false);
+
   if (!repoData) {
     return (
       <Card className="rounded-md overflow-hidden">
@@ -61,6 +66,9 @@ function ProjectCard({
       </Card>
     );
   }
+
+  const description = repoData.description || "Details unavailable";
+  const shouldTruncate = description.length > 150;
 
   return (
     <Card className="rounded-md overflow-hidden gap-0 py-0 w-full flex flex-col h-full">
@@ -112,9 +120,19 @@ function ProjectCard({
             )}
           </div>
 
-          <p className="text-sm text-muted-foreground line-clamp-2">
-            {repoData.description || "Details unavailable"}
-          </p>
+          <div className="text-sm text-muted-foreground">
+            <p className={isExpanded ? "" : "line-clamp-2"}>
+              {description}
+            </p>
+            {shouldTruncate && (
+              <button
+                onClick={() => setIsExpanded(!isExpanded)}
+                className="text-xs text-primary mt-1 hover:underline focus:outline-none"
+              >
+                {isExpanded ? "Show less" : "Read more"}
+              </button>
+            )}
+          </div>
 
           {repoData.topics?.length ? (
             <div className="flex flex-wrap gap-1.5">
@@ -139,18 +157,20 @@ function ProjectCard({
               <p className="text-sm">
                 Language: {repoData.language || "Unknown"}
               </p>
-              {repoData.stargazers_count !== null && (
-                <a
-                  href={`${repoData.html_url}/stargazers`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Stargazers"
-                  className="flex items-center gap-1 text-sm text-yellow-600 hover:text-yellow-500"
-                >
-                  <FaRegStar className="w-4 h-4" />
-                  <span>{repoData.stargazers_count}</span>
-                </a>
-              )}
+
+              {repoData.source !== "manual" &&
+                repoData.stargazers_count !== null && (
+                  <a
+                    href={`${repoData.html_url}/stargazers`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Stargazers"
+                    className="flex items-center gap-1 text-sm text-yellow-600 hover:text-yellow-500"
+                  >
+                    <FaRegStar className="w-4 h-4" />
+                    <span>{repoData.stargazers_count}</span>
+                  </a>
+                )}
             </div>
 
             <div className="flex items-center gap-2">

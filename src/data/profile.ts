@@ -1,40 +1,35 @@
-import { FaLinkedin, FaGoogleScholar, FaRegIdBadge, FaGithub, FaSquareFacebook } from "react-icons/fa6";
+import { FaLinkedin, FaRegIdBadge, FaGithub } from "react-icons/fa6";
 
 export const profile = {
-  name: `[Your Name]`,
-  headline: `Student @ [Your University]`,
-  email: `your-email@gmail.com`,
-  location: null,
+  name: `Harsh Rajesh Shah`,
+  headline: `Student @ University of Southern California`,
+  email: `hrshah@usc.edu`,
+  location: `Los Angeles , California`,
   profileImage: `https://github.com/pm25.png`,
   links: [
     {
       name: `LinkedIn`,
-      url: `https://www.linkedin.com/in/[your-linkedin]`,
-      icon: FaLinkedin,
-    },
-    {
-      name: `Google Scholar`,
-      url: `https://scholar.google.com/citations?user=[your-id]`,
-      icon: FaGoogleScholar,
+      url: `https://www.linkedin.com/in/harsh-shah16`,
+      icon: FaLinkedin
     },
     {
       name: `Résumé`,
-      url: `/showlit/pdf/sample-resume.pdf`,
-      icon: FaRegIdBadge,
+      url: `/showlit/pdf/resume.pdf`,
+      icon: FaRegIdBadge
     },
     {
       name: `Github`,
-      url: `https://github.com/[your-github]`,
-      icon: FaGithub,
-    },
-    {
-      name: `Facebook`,
-      url: `https://www.facebook.com/[your-facebook]`,
-      icon: FaSquareFacebook,
-    },
+      url: `https://github.com/harshshah1618`,
+      icon: FaGithub
+    }
   ],
-  biography: `Hi! I'm <strong>[Your Name]</strong>, a <em>[Your Title]</em> passionate about <em>[field or topic]</em>. Currently, I work as <em>[current role]</em> at <em>[organization]</em>, where I <em>[briefly describe your work or mission]</em>. 
-With a background in <em>[academic or professional background]</em>, I've developed strong interests in <em>[key interests or specialties]</em> and have contributed to projects like <i>[example project]</i> and <i>[another example]</i>, all focused on <em>[broader goal or impact]</em>.
+  biography: `Hi, I'm <strong>Harsh</strong>! I'm a <em>Computer Science grad student at USC</em> with a thing for <strong>distributed systems</strong> and <strong>backend engineering</strong>. I love the challenge of building software that scales gracefully and the satisfaction when everything just clicks.
+  
 <div class="my-2"></div>
-Outside of work, I enjoy <em>[hobbies or personal interests]</em>, which inspire creativity and keep me energized. Thanks for visiting! Feel free to <a href="mailto:[your-email@example.com]" target="_blank" rel="noopener noreferrer">reach out</a> to connect.`,
+
+Previously worked as a <em>Full-Stack Engineer</em>, and now I'm exploring new problems in <strong>systems design</strong> and <strong>infrastructure</strong>. Seeking <b>Summer 2026 internships</b> where I can contribute, learn, and work alongside talented teams.
+
+<div class="my-2"></div>
+
+Always happy to chat — whether it's about tech, career paths, or your favorite movie. <a href="mailto:hrshah@usc.edu" target="_blank" rel="noopener noreferrer">Reach out anytime!</a>`
 };

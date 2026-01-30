@@ -22,14 +22,14 @@ export default function Layout() {
 
         {/* I would really appreciate it if you could keep the footer as it is to preserve attribution. Thank you! */}
         <footer className="text-sm w-full text-center border-t py-4">
-          Created by
-          <Button asChild variant="link" className="p-0 ml-1">
+          © 2026 Harsh • Built with{" "}
+          <Button asChild variant="link" className="p-0">
             <a
               href="https://github.com/pm25/showlit"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Showlit Template
+              Showlit
             </a>
           </Button>
         </footer>
