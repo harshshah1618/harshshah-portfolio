@@ -14,7 +14,7 @@ export const profile = {
     },
     {
       name: `Résumé`,
-      url: `/showlit/pdf/resume.pdf`,
+      url: `/harshshah-portfolio/pdf/resume.pdf`,
       icon: FaRegIdBadge
     },
     {
@@ -24,7 +24,7 @@ export const profile = {
     }
   ],
   biography: `Hi, I'm <strong>Harsh</strong>! I'm a <em>Computer Science grad student at USC</em> with a thing for <strong>distributed systems</strong> and <strong>backend engineering</strong>. I love the challenge of building software that scales gracefully and the satisfaction when everything just clicks.
-  
+
 <div class="my-2"></div>
 
 Previously worked as a <em>Full-Stack Engineer</em>, and now I'm exploring new problems in <strong>systems design</strong> and <strong>infrastructure</strong>. Seeking <b>Summer 2026 internships</b> where I can contribute, learn, and work alongside talented teams.

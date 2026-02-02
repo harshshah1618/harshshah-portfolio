@@ -5,7 +5,7 @@
 
 site:
   name: "harsh's site"
-  repoUrl: "https://github.com/pm25/showlit"
+  repoUrl: "https://github.com/harshshah1618/harshshah-portfolio"
   description: "Personal and professional portfolio of me!"
   author: "Harsh Shah"
   base: "/harshshah-portfolio/"
