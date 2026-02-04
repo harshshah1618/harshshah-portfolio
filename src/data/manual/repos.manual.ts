@@ -1,4 +1,5 @@
 import type { RepoProps } from "@/types/repo";
+import site from "@/data/generated/site.json";
 
 export const manualRepos: Record<string, RepoProps> = {
   "mcl-ros": {
@@ -8,7 +9,7 @@ export const manualRepos: Record<string, RepoProps> = {
     topics: ["robotics", "motion-planning", "manipulation", "rrt", "python"],
     language: "Python",
     homepage: "#",
-    previewImage: "/harshshah-portfolio/images/robotics_sim_real.png",
+    previewImage: `${site.base}images/robotics_sim_real.png`,
     featured: true,
     category: "research",
   },
@@ -18,8 +19,8 @@ export const manualRepos: Record<string, RepoProps> = {
     description: "Developed an OCR and Named Entity Recognition pipeline to extract drug names from handwritten medical prescriptions. Workflow: Image Input -> Pytesseract OCR -> Text Preprocessing -> spaCy NLP Pipeline -> Entity Extraction -> API Query (drugs.com). Achieved 85% accuracy on sample datasets.",
     topics: ["nlp", "ocr", "spacy", "pytesseract", "api-integration"],
     language: "Python",
-    homepage: "/harshshah-portfolio/pdf/Final%20Report.pdf",
-    previewImage: "/harshshah-portfolio/images/generated/ner_workflow_flowchart.png",
+    homepage: `${site.base}pdf/Final%20Report.pdf`,
+    previewImage: `${site.base}images/generated/ner_workflow_flowchart.png`,
     featured: true,
     category: "coursework",
   },
@@ -29,8 +30,8 @@ export const manualRepos: Record<string, RepoProps> = {
     description: "Architected a high-throughput distributed computing engine for Fidelity Investments. System processes massive financial datasets using a master-worker architecture (EC2). Features: Redis for state management, FastAPI for job orchestration, and Dask for parallel execution across thousands of CPU cores.",
     topics: ["distributed-systems", "fastapi", "dask", "redis", "aws-ec2", "fidelity"],
     language: "Python",
-    homepage: "/harshshah-portfolio/pdf/distributed_computing_system.pdf",
-    previewImage: "/harshshah-portfolio/images/generated/distributed_compute_architecture.png",
+    homepage: `${site.base}pdf/distributed_computing_system.pdf`,
+    previewImage: `${site.base}images/generated/distributed_compute_architecture.png`,
     featured: true,
     category: "work",
   },
@@ -43,7 +44,7 @@ export const manualRepos: Record<string, RepoProps> = {
     topics: ["full-stack", "distributed-systems", "cloud", "backend"],
     language: "FastAPI / React",
     homepage: "https://sjceplacements.org/",
-    previewImage: "/harshshah-portfolio/images/placement_portal_logo.png",
+    previewImage: `${site.base}images/placement_portal_logo.png`,
     featured: true,
     category: "product",
   },
@@ -55,7 +56,7 @@ export const manualRepos: Record<string, RepoProps> = {
     topics: ["machine-learning", "flask", "python", "scikit-learn", "content-filtering"],
     language: "Python",
     homepage: "https://github.com/harshshah1618/recommendify",
-    previewImage: "/harshshah-portfolio/images/generated/recommendify_flow_diagram.png",
+    previewImage: `${site.base}images/generated/recommendify_flow_diagram.png`,
     featured: true,
     category: "product",
   },
