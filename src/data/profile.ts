@@ -14,7 +14,7 @@ export const profile = {
     },
     {
       name: `Résumé`,
-      url: `/harshshah-portfolio/harshshah-portfolio/pdf/resume.pdf`,
+      url: `/harshshah-portfolio/pdf/resume.pdf`,
       icon: FaRegIdBadge
     },
     {

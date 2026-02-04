@@ -32,7 +32,7 @@ profile:
     #     package: "react-icons/fa6"
 
     - name: "Résumé"
-      url: "/harshshah-portfolio/pdf/resume.pdf"
+      url: "/pdf/resume.pdf"
       icon:
         name: "FaRegIdBadge"
         package: "react-icons/fa6"
