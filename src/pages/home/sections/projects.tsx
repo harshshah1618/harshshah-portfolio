@@ -70,36 +70,50 @@ function ProjectCard({
   const description = repoData.description || "Details unavailable";
   const shouldTruncate = description.length > 150;
 
+  const previewHref =
+    repoData.html_url ||
+    (repoData.homepage && repoData.homepage !== "#"
+      ? repoData.homepage
+      : undefined);
+
+  const previewImageBlock = (
+    <div className="aspect-3/2 w-full overflow-hidden">
+      {repoData.previewImage ? (
+        <img
+          src={repoData.previewImage}
+          alt={repoData.name || "Project image"}
+          className="w-full h-full object-cover"
+          style={{ overflowClipMargin: "unset" }}
+          loading="lazy"
+        />
+      ) : (
+        <div className="flex flex-col items-center justify-center p-4 w-full h-full bg-muted">
+          <span className="text-lg font-semibold opacity-80 text-center">
+            {repoData.name || "Unnamed Project"}
+          </span>
+          <span className="text-sm text-muted-foreground text-center">
+            Image not available
+          </span>
+        </div>
+      )}
+    </div>
+  );
+
   return (
     <Card className="rounded-md overflow-hidden gap-0 py-0 w-full flex flex-col h-full">
       <div className="flex flex-col flex-grow">
-        <a
-          href={repoData.html_url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block"
-        >
-          <div className="aspect-3/2 w-full overflow-hidden">
-            {repoData.previewImage ? (
-              <img
-                src={repoData.previewImage}
-                alt={repoData.name || "Project image"}
-                className="w-full h-full object-cover"
-                style={{ overflowClipMargin: "unset" }}
-                loading="lazy"
-              />
-            ) : (
-              <div className="flex flex-col items-center justify-center p-4 w-full h-full bg-muted">
-                <span className="text-lg font-semibold opacity-80 text-center">
-                  {repoData.name || "Unnamed Project"}
-                </span>
-                <span className="text-sm text-muted-foreground text-center">
-                  Image not available
-                </span>
-              </div>
-            )}
-          </div>
-        </a>
+        {previewHref ? (
+          <a
+            href={previewHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block"
+          >
+            {previewImageBlock}
+          </a>
+        ) : (
+          <div className="block">{previewImageBlock}</div>
+        )}
 
         <div className="w-full border-t" />
 

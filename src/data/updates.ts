@@ -8,6 +8,20 @@ export interface Update {
 }
 
 export const updates: Update[] = [
+    {
+        date: "Jan 2026",
+        title: "ICAROS Lab",
+        description: "Working on Quality Diversity Algorithms for Reinforcement Learning.",
+        type: "news",
+        tags: ["RL", "Robotics"],
+    },
+    {
+        date: "Jan 2026",
+        title: "USC Liquid Propulsion Lab",
+        description: "Working as a software engineer on the Digital Acquisition and Controls Team.",
+        type: "news",
+        tags: ["Avionics", "Python"],
+    },
    
     {
         date: "Jan 2026",

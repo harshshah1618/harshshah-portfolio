@@ -61,6 +61,10 @@ export default function ProjectsPage() {
       const aData = repos[a];
       const bData = repos[b];
 
+      const oa = aData.portfolioOrder ?? 10_000;
+      const ob = bData.portfolioOrder ?? 10_000;
+      if (oa !== ob) return oa - ob;
+
       if (sortBy === "stars") {
         return (bData.stargazers_count ?? 0) - (aData.stargazers_count ?? 0);
       }
@@ -194,35 +198,47 @@ function ProjectCard({
 
   const [isExpanded, setIsExpanded] = useState(false);
 
+  const previewHref =
+    html_url ||
+    (homepage && homepage !== "#" ? homepage : undefined);
+
+  const previewImageBlock = (
+    <div className="aspect-video w-full overflow-hidden border-b">
+      {previewImage ? (
+        <img
+          src={previewImage}
+          alt={name || "Project image"}
+          className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+          loading="lazy"
+        />
+      ) : (
+        <div className="flex flex-col items-center justify-center p-4 w-full h-full bg-muted">
+          <span className="text-lg font-semibold opacity-80 text-center">
+            {name || "Unnamed Project"}
+          </span>
+          <span className="text-sm text-muted-foreground text-center">
+            Image not available
+          </span>
+        </div>
+      )}
+    </div>
+  );
+
   return (
     <Card className="rounded-md overflow-hidden gap-0 py-0 w-full h-full hover:shadow-md transition-shadow">
       <div className="flex flex-col h-full">
-        <a
-          href={html_url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block shrink-0"
-        >
-          <div className="aspect-video w-full overflow-hidden border-b">
-            {previewImage ? (
-              <img
-                src={previewImage}
-                alt={name || "Project image"}
-                className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-                loading="lazy"
-              />
-            ) : (
-              <div className="flex flex-col items-center justify-center p-4 w-full h-full bg-muted">
-                <span className="text-lg font-semibold opacity-80 text-center">
-                  {name || "Unnamed Project"}
-                </span>
-                <span className="text-sm text-muted-foreground text-center">
-                  Image not available
-                </span>
-              </div>
-            )}
-          </div>
-        </a>
+        {previewHref ? (
+          <a
+            href={previewHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block shrink-0"
+          >
+            {previewImageBlock}
+          </a>
+        ) : (
+          <div className="block shrink-0">{previewImageBlock}</div>
+        )}
 
         <div className="flex flex-col p-4 flex-1">
           <div className="flex-1 min-h-0">
@@ -287,7 +303,7 @@ function ProjectCard({
           <div className="flex flex-row items-center justify-between text-muted-foreground pt-4 mt-auto border-t">
             <div className="flex items-center gap-2 text-sm">
               <p className="truncate max-w-[100px]" title={language ?? undefined}>{language || "Unknown"}</p>
-              {stargazers_count !== null && (
+              {html_url && stargazers_count != null && (
                 <a
                   href={`${html_url}/stargazers`}
                   target="_blank"

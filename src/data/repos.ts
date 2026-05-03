@@ -13,4 +13,15 @@ export const featuredRepos: RepoMap = Object.fromEntries(
   Object.entries(repos).filter(([, repo]) => repo.featured === true),
 );
 
-export const featuredReposArray: RepoProps[] = Object.values(featuredRepos);
+function sortKeyUpdated(repo: RepoProps) {
+  return new Date(repo.pushed_at ?? repo.created_at ?? 0).getTime();
+}
+
+export const featuredReposArray: RepoProps[] = Object.values(featuredRepos).sort(
+  (a, b) => {
+    const oa = a.portfolioOrder ?? 10_000;
+    const ob = b.portfolioOrder ?? 10_000;
+    if (oa !== ob) return oa - ob;
+    return sortKeyUpdated(b) - sortKeyUpdated(a);
+  },
+);
